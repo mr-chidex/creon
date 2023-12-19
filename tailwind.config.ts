@@ -7,7 +7,21 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          100: "#AB23FF",
+          200: "#3D8BFF",
+        },
+        dark: {
+          100: "#13171D",
+        },
+      },
+      fontFamily: {
+        Roboto: ["Roboto", "sans-serif"],
+        Jost: ["Jost", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
