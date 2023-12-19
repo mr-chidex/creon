@@ -1,5 +1,6 @@
-import { Hero } from "../components";
+import { ComingSoon, Footer, Hero, MoreDetails } from "../components";
 import CreonPassNFT from "../components/CreonPassNFT";
+import OurVision from "../components/OurVision";
 import PassingThrough from "../components/PassingThrough";
 
 export default function Home() {
@@ -12,6 +13,10 @@ export default function Home() {
       <Hero />
       <CreonPassNFT />
       <PassingThrough />
+      <OurVision />
+      <ComingSoon />
+      <MoreDetails />
+      <Footer />
     </main>
   );
 }

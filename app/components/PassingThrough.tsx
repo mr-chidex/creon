@@ -3,7 +3,7 @@ import React from "react";
 
 const PassingThrough = () => {
   return (
-    <section className="my-8  px-16  gap-8">
+    <section className="my-8  px-16">
       <h2 className="text-5xl uppercase font-semibold mb-8">
         Profiting Through
       </h2>
