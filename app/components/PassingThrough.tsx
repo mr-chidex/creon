@@ -15,7 +15,7 @@ const PassingThrough = () => {
       <div className="grid grid-cols-3 gap-8 my-8 items-center">
         <div className="col-span-2 relative">
           <Image
-            src="/assets/images/passingthrough.png"
+            src="/assets/images/profiting.png"
             width={300}
             height={400}
             sizes="100vw"
@@ -25,8 +25,6 @@ const PassingThrough = () => {
             }}
             alt="passingthrough"
           />
-
-          <div className="w-full h-full absolute top-0 left-0 z-10 passing-through"></div>
         </div>
 
         <div className="p-8 flex flex-col gap-8">
