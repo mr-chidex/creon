@@ -28,7 +28,7 @@ const OurVision = () => {
   ];
 
   return (
-    <section className="my-16 grid lg:grid-cols-2 px-16 py-8 gap-8 ">
+    <section className="my-16 grid lg:grid-cols-2 px-8 md:px-16 py-8 gap-8">
       <div className="grid gap-8">
         <h2 className="text-3xl leading-10">
           Our vision is to support the innovation of AI blockchain projects

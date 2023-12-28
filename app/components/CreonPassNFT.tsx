@@ -10,9 +10,9 @@ const CreonPassNFT = () => {
   ];
 
   return (
-    <section className="my-8 grid lg:grid-cols-2 px-16 py-8 gap-8 items-center">
+    <section className="my-8 grid lg:grid-cols-2 px-8 md:px-16 py-8 gap-8 items-center">
       <div className="grid gap-8">
-        <h2 className="text-white uppercase font-semibold text-5xl">
+        <h2 className="text-white uppercase font-semibold text-4xl md:text-5xl">
           creon pass nft
         </h2>
 
@@ -34,7 +34,7 @@ const CreonPassNFT = () => {
 
         <button
           className=" bg-gradient-to-r from-[#3D8BFF]
-          to-[#AB23FF] w-2/3 rounded-md
+          to-[#AB23FF] md:w-2/3 rounded-md
           px-16 py-4 font-bold
            text-center"
         >

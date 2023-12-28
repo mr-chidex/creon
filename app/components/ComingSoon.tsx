@@ -34,10 +34,12 @@ export const ComingSoon = () => {
   ];
 
   return (
-    <section className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8 my-8 px-16 ">
+    <section className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8 my-8 px-8 md:px-16 ">
       {incoming.map((item, idx) => (
         <div key={idx} className="bg-dark-200 py-8 flex flex-col gap-4">
-          <h2 className="font-bold uppercase text-4xl px-8">{item.title}</h2>
+          <h2 className="font-bold uppercase text-3xl md:text-4xl px-8">
+            {item.title}
+          </h2>
 
           <h3 className="px-8 gradient font-semibold text-xl h-20">
             {item.subTitle}

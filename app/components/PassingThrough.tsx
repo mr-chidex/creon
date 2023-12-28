@@ -3,12 +3,12 @@ import React from "react";
 
 const PassingThrough = () => {
   return (
-    <section className="my-8  px-16">
-      <h2 className="text-5xl uppercase font-semibold mb-8">
+    <section className="my-8  px-8 md:px-16">
+      <h2 className="text-4xl md:text-5xl uppercase font-semibold mb-8">
         Profiting Through
       </h2>
 
-      <h3 className="gradient bg-clip-text text-transparent uppercase text-2xl md:text-3xl font-bold md:ml-16">
+      <h3 className="gradient bg-clip-text text-transparent uppercase text-xl md:text-3xl font-bold md:ml-16">
         AI Innovation & Decentralization
       </h3>
 

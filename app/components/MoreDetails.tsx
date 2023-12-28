@@ -24,11 +24,13 @@ export const MoreDetails = () => {
   ];
 
   return (
-    <section className="my-16 px-16 grid gap-16 ">
+    <section className="my-16 px-8 md:px-16 grid gap-16 ">
       {features.map((feature, idx) => (
         <div key={idx} className="grid lg:grid-cols-12 gap-4 items-center">
           <div className="flex flex-col gap-4 lg:col-span-8">
-            <h2 className="text-4xl font-semibold">{feature.title}</h2>
+            <h2 className="text-3xl md:text-4xl font-semibold">
+              {feature.title}
+            </h2>
             <p>{feature.content}</p>
           </div>
 

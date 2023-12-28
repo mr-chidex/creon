@@ -11,11 +11,14 @@ export default function Home() {
     "
     >
       <Hero />
-      <CreonPassNFT />
-      <PassingThrough />
-      <OurVision />
-      <ComingSoon />
-      <MoreDetails />
+      <div className="max-w-[1280px] mx-auto">
+        <CreonPassNFT />
+        <PassingThrough />
+        <OurVision />
+        <ComingSoon />
+        <MoreDetails />
+      </div>
+
       <Footer />
     </main>
   );
