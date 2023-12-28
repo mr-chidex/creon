@@ -24,25 +24,27 @@ export const MoreDetails = () => {
   ];
 
   return (
-    <section>
+    <section className="my-16 px-16 grid gap-16 ">
       {features.map((feature, idx) => (
-        <div key={idx} className="flex gap-4 items-center">
-          <div>
-            <h2>{feature.title}</h2>
+        <div key={idx} className="grid lg:grid-cols-12 gap-4 items-center">
+          <div className="flex flex-col gap-4 lg:col-span-8">
+            <h2 className="text-4xl font-semibold">{feature.title}</h2>
             <p>{feature.content}</p>
           </div>
 
-          <Image
-            src={feature.image}
-            width={300}
-            height={400}
-            // sizes="100vw"
-            // style={{
-            //   width: "100%",
-            //   height: "auto",
-            // }}
-            alt={feature.title}
-          />
+          <div className="lg:col-span-4">
+            <Image
+              src={feature.image}
+              width={800}
+              height={700}
+              sizes="100vw"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+              alt={feature.title}
+            />
+          </div>
         </div>
       ))}
     </section>

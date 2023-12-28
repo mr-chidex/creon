@@ -8,6 +8,10 @@
   .linear-gradient {
     @apply bg-gradient-to-r from-[#3D8BFF]  to-[#AB23FF];
   }
+
+  html {
+    @apply bg-black;
+  }
 }
 
 :root {
@@ -26,6 +30,11 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
   margin: 0;
   padding: 0;
 }

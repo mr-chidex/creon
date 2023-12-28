@@ -10,9 +10,9 @@ const CreonPassNFT = () => {
   ];
 
   return (
-    <section className="my-8 grid grid-cols-2 px-16 py-8 gap-8">
-      <div className="grid gap-16">
-        <h2 className="text-white uppercase font-semibold text-5xl mb-8">
+    <section className="my-8 grid lg:grid-cols-2 px-16 py-8 gap-8 items-center">
+      <div className="grid gap-8">
+        <h2 className="text-white uppercase font-semibold text-5xl">
           creon pass nft
         </h2>
 

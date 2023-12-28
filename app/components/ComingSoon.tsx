@@ -24,29 +24,38 @@ export const ComingSoon = () => {
         "The Creon AI Launchpad, an essential component of our initiative, represents a groundbreaking opportunity in the realm of AI and blockchain. It provides the first known platform for acquiring allocations in tokenized AI projects, offering our community of NFT and CREON token holders early access to innovative and promising AI endeavors.",
       image: "/assets/images/launchpad.png",
     },
+    // {
+    //   title: "income",
+    //   subTitle: "Harnessing AI for Profit Generation",
+    //   content:
+    //     "As an integral part of our project, AI Income offers the opportunity to benefit from a genuine, profit-generating AI-based business. This facet of our initiative leverages the power of selected exclusive AI tools to create a profit stream.",
+    //   image: "/assets/images/income.png",
+    // },
   ];
 
   return (
-    <section className="grid grid-cols-3 gap-8">
+    <section className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8 my-8 px-16 ">
       {incoming.map((item, idx) => (
-        <div key={idx}>
-          <h2>{item.title}</h2>
+        <div key={idx} className="bg-dark-200 py-8 flex flex-col gap-4">
+          <h2 className="font-bold uppercase text-4xl px-8">{item.title}</h2>
 
-          <h3>{item.subTitle}</h3>
+          <h3 className="px-8 gradient font-semibold text-xl h-20">
+            {item.subTitle}
+          </h3>
 
           <Image
             src={item.image}
             width={300}
             height={400}
-            // sizes="100vw"
-            // style={{
-            //   width: "100%",
-            //   height: "auto",
-            // }}
+            sizes="100vw"
+            style={{
+              width: "100%",
+              // height: "auto",
+            }}
             alt={item.title}
           />
 
-          <p>{item.content}</p>
+          <p className="px-8">{item.content}</p>
         </div>
       ))}
     </section>

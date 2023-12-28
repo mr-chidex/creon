@@ -8,12 +8,12 @@ const PassingThrough = () => {
         Profiting Through
       </h2>
 
-      <h3 className="gradient bg-clip-text text-transparent text-3xl font-bold ml-16">
+      <h3 className="gradient bg-clip-text text-transparent uppercase text-2xl md:text-3xl font-bold md:ml-16">
         AI Innovation & Decentralization
       </h3>
 
-      <div className="grid grid-cols-3 gap-8 my-8 items-center">
-        <div className="col-span-2 relative">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 my-8 items-center">
+        <div className="lg:col-span-2 relative">
           <Image
             src="/assets/images/profiting.png"
             width={300}
@@ -27,7 +27,7 @@ const PassingThrough = () => {
           />
         </div>
 
-        <div className="p-8 flex flex-col gap-8">
+        <div className="flex flex-col gap-8">
           <h3 className="font-bold text-xl">
             The dynamic community driven business model of the future.
           </h3>

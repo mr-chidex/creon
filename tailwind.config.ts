@@ -15,7 +15,9 @@ const config: Config = {
         },
         dark: {
           100: "#13171D",
+          200: "#13171d99",
         },
+        "dark-rgba": "rgba(0, 0, 0, 0.4)",
       },
       fontFamily: {
         Roboto: ["Roboto", "sans-serif"],
