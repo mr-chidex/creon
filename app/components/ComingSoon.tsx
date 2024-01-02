@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 export const ComingSoon = () => {
   const incoming = [
@@ -36,7 +39,13 @@ export const ComingSoon = () => {
   return (
     <section className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8 my-8 px-8 md:px-16 ">
       {incoming.map((item, idx) => (
-        <div key={idx} className="bg-dark-200 py-8 flex flex-col gap-4">
+        <motion.div
+          initial={{ opacity: 0, y: `${idx * 10 + 10}%` }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: idx / 10 + 0.8 }}
+          key={idx}
+          className="bg-dark-200 py-8 flex flex-col gap-4"
+        >
           <h2 className="font-bold uppercase text-3xl md:text-4xl px-8">
             {item.title}
           </h2>
@@ -58,7 +67,7 @@ export const ComingSoon = () => {
           />
 
           <p className="px-8">{item.content}</p>
-        </div>
+        </motion.div>
       ))}
     </section>
   );

@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
@@ -9,7 +12,12 @@ export const Hero = () => {
           Your browser does not support the video tag.
         </video>
 
-        <div className="absolute bottom-16 bg-transparent grid gap-8 left-0 mx-8">
+        <motion.div
+          initial={{ opacity: 0, y: "30%" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="absolute bottom-16 bg-transparent grid gap-8 left-0 mx-8"
+        >
           <h1 className="uppercase font-semibold md:text-2xl xl:text-5xl  text-white leading-normal mx-4">
             The world&apos;s first <br />
             platform for Tokenizing <br />
@@ -25,7 +33,7 @@ export const Hero = () => {
           >
             Hold the Creon Pass NFT and earn passive income from AI Tools
           </h3>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

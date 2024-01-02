@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 export const MoreDetails = () => {
   const features = [
@@ -24,7 +27,12 @@ export const MoreDetails = () => {
   ];
 
   return (
-    <section className="my-16 px-8 md:px-16 grid gap-16 ">
+    <motion.section
+      initial={{ opacity: 0, y: "10%" }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      className="my-16 px-8 md:px-16 grid gap-16 "
+    >
       {features.map((feature, idx) => (
         <div key={idx} className="grid lg:grid-cols-12 gap-4 items-center">
           <div className="flex flex-col gap-4 lg:col-span-8">
@@ -49,6 +57,6 @@ export const MoreDetails = () => {
           </div>
         </div>
       ))}
-    </section>
+    </motion.section>
   );
 };

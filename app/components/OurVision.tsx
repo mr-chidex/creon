@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 import {
   ProfitabilityIcon,
   DecentralisedIcon,
@@ -30,13 +33,18 @@ const OurVision = () => {
   return (
     <section className="my-16 grid lg:grid-cols-2 px-8 md:px-16 py-8 gap-8">
       <div className="grid gap-8">
-        <h2 className="text-3xl leading-10">
+        <motion.h2
+          initial={{ opacity: 0, y: "30%" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-3xl leading-10"
+        >
           Our vision is to support the innovation of AI blockchain projects
           &nbsp;
           <span className="gradient">
             while prioritizing communities and democratizing profits
           </span>
-        </h2>
+        </motion.h2>
 
         <Image
           src="/assets/images/vision.png"
@@ -53,10 +61,16 @@ const OurVision = () => {
 
       <div className="grid gap-8">
         {visions.map((vision, idx) => (
-          <div key={idx} className="flex gap-8 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: `${idx * 10 + 20}%` }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: idx / 10 + 0.8 }}
+            key={idx}
+            className="flex gap-8 items-center"
+          >
             <> {vision.icon}</>
             <p className="font-semibold">{vision.title}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 const CreonPassNFT = () => {
   const lists = [
@@ -26,9 +29,15 @@ const CreonPassNFT = () => {
 
         <ul className="grid gap-4">
           {lists.map((list, idx) => (
-            <li key={idx} className="p-4 border border-dark-100 rounded-md">
+            <motion.li
+              key={idx}
+              initial={{ opacity: 0, y: `${idx * 10 + 50}%` }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: idx / 10 + 0.7 }}
+              className="p-4 border border-dark-100 rounded-md"
+            >
               {list}
-            </li>
+            </motion.li>
           ))}
         </ul>
 
@@ -42,7 +51,12 @@ const CreonPassNFT = () => {
         </button>
       </div>
 
-      <div className="">
+      <motion.div
+        initial={{ opacity: 0, y: "30%" }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className=""
+      >
         <Image
           src="/assets/images/creonpassnft.png"
           width={300}
@@ -54,7 +68,7 @@ const CreonPassNFT = () => {
           }}
           alt="creonpassnft"
         />
-      </div>
+      </motion.div>
     </section>
   );
 };
